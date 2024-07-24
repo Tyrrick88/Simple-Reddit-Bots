@@ -1,5 +1,11 @@
 import praw
 import config
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+client_secretKey = os.getenv('client_secretKey')
+
 
 def bot_login():
 
